@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+   xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+   <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+   <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+   <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+   <!-- Tell iOS not to automatically link certain text strings. -->
+   <meta name="color-scheme" content="light">
+   <meta name="supported-color-schemes" content="light">
+   <!--[if !mso]><!-- -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--<![endif]-->
+   <title></title>
+   <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+   <!--[if gte mso 9]>     <xml>         <o:OfficeDocumentSettings>             <o:AllowPNG/>             <o:PixelsPerInch>96</o:PixelsPerInch>         </o:OfficeDocumentSettings>     </xml>     <![endif]-->
+
+   <style type="text/css">
+      /* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+      :root {
+         color-scheme: light;
+         supported-color-schemes: light;
+      }
+
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,
+      body {
+         margin: 0 auto !important;
+         padding: 0 !important;
+         height: 100% !important;
+         width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+         -ms-text-size-adjust: 100%;
+         -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+         margin: 0 !important;
+      }
+
+      /* What it does:
+ forces Samsung Android mail clients to use the entire viewport */
+      #MessageViewBody,
+      #MessageWebViewDiv {
+         width: 100% !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+         mso-table-lspace: 0pt !important;
+         mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Replaces default bold style. */
+      th {
+         font-weight: normal;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+         text-decoration: none;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+         -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      a[x-apple-data-detectors],
+      /* iOS */
+      .unstyle-auto-detected-links a,
+      .aBn {
+         border-bottom: 0 !important;
+         cursor: default !important;
+         color: inherit !important;
+         text-decoration: none !important;
+         font-size: inherit !important;
+         font-family: inherit !important;
+         font-weight: inherit !important;
+         line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+      .im {
+         color: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+         display: none !important;
+         opacity: 0.01 !important;
+      }
+
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img+div {
+         display: none !important;
+      }
+
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89 */
+      /* Create one of these media queries for each additional viewport
+ size you'd like to fix */
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+         u~div .email-container {
+            min-width: 320px !important;
+         }
+      }
+
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+         u~div .email-container {
+            min-width: 375px !important;
+         }
+      }
+
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+         u~div .email-container {
+            min-width: 414px !important;
+         }
+      }
+
+      div,
+      p,
+      a,
+      li,
+      td {
+         -webkit-text-size-adjust: none;
+         -ms-text-size-adjust: none;
+      }
+
+      a {
+         color: #ffffff;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+      }
+
+      u+.body {
+         min-width: 100vw;
+      }
+
+      table td {
+         border-collapse: collapse;
+      }
+
+      table th {
+         margin: 0 !important;
+         padding: 0 !important;
+         vertical-align: top;
+         font-weight:
+            normal;
+      }
+
+      .ExternalClass {
+         width: 100%;
+      }
+
+      .ExternalClass * {
+         line-height: 110%
+      }
+
+      .gmailfix {
+         display: none;
+         display: none !important;
+      }
+
+      .full-width-background {
+         background-image: url("");
+         background-position: center;
+         background-size: cover;
+      }
+   </style>
+   <style type="text/css">
+      div[style*="margin: 16px 0"] {
+         margin: 0 !important;
+      }
+   </style>
+   <style type="text/css">
+      @media screen and (min-width: 600px) {
+         .wrapto600px {
+            width: 600px !important;
+         }
+
+         .btnSpace {
+            width: 15px !important;
+         }
+
+         .lft {
+            text-align: left !important;
+            direction: ltr !important;
+         }
+
+         .lft-img {
+            float: left;
+            padding-right: 30px !important;
+            padding-top: 20px !important;
+            padding-bottom: 30px !important;
+         }
+
+         .rgt-img {
+            float: right;
+            padding-left: 30px !important;
+            padding-top: 20px !important;
+            padding-bottom: 30px !important;
+         }
+
+         .rgt {
+            text-align: right !important;
+         }
+
+         .lft-p {
+            margin-top: 0px !important;
+            font-size: 16px !important;
+         }
+      }
+
+      @media screen and (max-width: 768px) {
+         .wrapper {
+            min-width: 0 !important;
+         }
+      }
+
+      @media screen and (max-width: 568px) {
+         .wrapper {
+            min-width: 0 !important;
+         }
+      }
+
+      @media screen and (max-width: 568px) {
+         .full-width-background {
+            overflow: hidden !important;
+         }
+      }
+
+      @media screen and (max-width: 480px) {
+         .wrapper {
+            min-width: 0 !important;
+         }
+      }
+
+      @media screen and (max-width: 568px) {
+         .full-width-background {
+            overflow: hidden !important;
+         }
+
+         .hero_copy_space {
+            height: 320px !important;
+            font-size: 45px !important;
+            line-height: 42px !important;
+         }
+
+         .header {
+            font-size: 45px !important;
+            line-height: 42px !important;
+         }
+      }
+   </style>
+   <style type="text/css">
+      @media only screen {
+         body {
+            width: 100% !important;
+            min-width: 100% !important;
+         }
+
+         a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+         }
+      }
+   </style>
+   <style type="text/css">
+      @media screen and (max-device-width: 660px),
+      screen and (max-width: 660px) {
+         .wrapto100pc {
+            width: 100% !important;
+            height: auto !important;
+         }
+
+         .rgt-img {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+         }
+
+         .logo {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 280px !important;
+            min-width: 0px !important;
+         }
+
+         .no-bg {
+            background-image: none !important;
+            background: none !important;
+         }
+
+         .colsplit {
+            width: 100% !important;
+            float: left !important;
+            display: block !important;
+         }
+
+         .nomob {
+            display: none !important;
+            width: 0px !important;
+            height: 0px !important;
+         }
+
+         .cta {
+            font-size: 16px !important;
+            line-height: 24px !important;
+         }
+
+         .p {
+            font-size: 18px !important;
+            line-height: 24px !important;
+         }
+
+         .h1 {
+            font-size: 25px !important;
+            line-height: 32px !important;
+         }
+
+         .h2 {
+            font-size: 30px !important;
+            line-height: 32px !important;
+         }
+
+         .h3 {
+            font-size: 45px !important;
+            line-height: 44px !important;
+         }
+
+         .h4 {
+            font-size: 25px !important;
+            line-height: 32px !important;
+         }
+
+         .display-table {
+            display: table !important;
+            width: 100% !important;
+         }
+
+         .display-header {
+            display: table-header-group !important;
+            width: 100% !important;
+         }
+
+         .display-footer {
+            display: table-footer-group !important;
+            width: 100% !important;
+         }
+
+         .body_text {
+            font-size: 20px !important;
+         }
+
+         .main_header {
+            font-size: 50px !important;
+            padding-top: 80px !important;
+            line-height: 50px !important;
+         }
+
+         .cta {
+            height: 55px;
+         }
+
+         .cta a {
+            font-size: 24px !important;
+         }
+
+         .spacing {
+            height: 200px !important;
+         }
+
+         .border {
+            width: 20px;
+         }
+
+         .copy_border {
+            width: 40px;
+         }
+      }
+   </style><!--[gte mso 9> <style type="text/css"> .h3{line-height: 5px !important;}</style><![endif]-->
+   <style>
+      @font-face {
+         font-family: 'shapiro-95superwide';
+         font-style: normal;
+         font-weight: normal;
+         src: local('shapiro-95superwide'), local('shapiro-95superwide'), url('https://cdn.2kgames.com/web/common/fonts/shapiro_95/615015/shapiro-95superwide.otf') format('opentype');
+      }
+
+      @font-face {
+         font-family: 'shapiro-95superwide';
+         font-style: normal;
+         font-weight: normal;
+         src: local('shapiro-95superwide'), local('shapiro-95superwide'), url('https://cdn.2kgames.com/web/common/fonts/shapiro_95/shapiro-95superwide.ttf') format('truetype');
+      }
+
+      @font-face {
+         font-family: 'shapiro-95superwide';
+         font-style: normal;
+         font-weight: normal;
+         src: local('shapiro-95superwide'), local('shapiro-95superwide'), url('https://cdn.2kgames.com/web/common/fonts/shapiro_95/shapiro-95superwide.woff2') format('woff2');
+      }
+   </style>
+   <!--  -->
+</head>
+<img
+   src="https://click.newsletter.2k.com/open.aspx?ffcb10-fe5616797d65067b7c10-fdf216757567067a721d7877-fe8912717c67027570-fefa177375620d-fe241270756d007c7c1179-fefd167675650d&d=60206&bmt=0"
+   width="1" height="1" alt="">
+
+<body style="padding:0; margin:0;" class="body">
+   <style type="text/css">
+      div.preheader {
+         display: none !important;
+      }
+   </style>
+   <div class="preheader" style="font-size: 1px; display: none !important;">Level up your holiday vibe with NBA 2K23
+   </div>
+
+   <!--PRE HEADER TEXT FIX-->
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" height="1" style="display: none;">
+      <tbody height="1">
+         <tr height="1">
+            <td width="20">&nbsp;</td>
+            <td height="1">
+               <table width="100%" border="0" cellspacing="0" cellpadding="0" height="1"
+                  style="display: none;mso-hide:all;">
+                  <tbody>
+                     <tr>
+                        <td width="100%" height="1" style="display: none;">
+                           &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+
+                           &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+                           &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td width="20">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+   <!-- /PRE HEADER TEXT FIX -->
+
+   <div style="background-color:#1d1d1d">
+      <!--[if (gte mso 9)|(IE)]><body style="padding:0; margin:0;background-color:#1d1d1d"><![endif]-->
+      <div style="display:none !important; height:0px; mso-hide: all;">
+
+
+         PH,
+         Save 50-60% on NBA 2K23 🎮,
+         https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/e5e2c2f5-ef28-4f81-887c-7011ec7c669c.jpg,
+         WANT MORE HOLIDAY HOOPS?,
+         https://nba.2k.com/2k23/buy/?utm_source=sfmc&utm_medium=email&utm_content=Module_0_CTA&utm_campaign=%%jobid%%&release=nba-2k23-michael-jordan-edition&platform=steam&medium=digital,
+         BUY NOW,
+         https://nba.2k.com/2k23/buy/?utm_source=sfmc&utm_medium=email&utm_content=Module_1_Image&utm_campaign=%%jobid%%&release=nba-2k23-standard-edition&platform=steam&medium=digital,
+         ,
+         https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/df4a3369-8daf-48bf-a1c7-b3ebba6e11a5.jpg,
+         NBA 2K23 STANDARD EDITION SALE,
+         There has never been a better time to try NBA 2K23 than right now. Our NBA 2K23 Holiday Sale is here and now
+         you can save 55% on NBA 2K23 Standard Edition for PC.* Whether you're dominating MyCAREER, MyTEAM, MyNBA or
+         PLAY NOW, NBA 2K23 will keep you occupied for the holidays. Level-up your game and earn massive rewards on your
+         way to greatness. Don't miss out on the game-winning gift of the holiday season.,
+         BUY NOW,
+         https://nba.2k.com/2k23/buy/?utm_source=sfmc&utm_medium=email&utm_content=Module_1_CTA&utm_campaign=%%jobid%%&release=nba-2k23-standard-edition&platform=steam&medium=digital,
+         https://nba.2k.com/2k23/buy/?utm_source=sfmc&utm_medium=email&utm_content=Module_2_Image&utm_campaign=%%jobid%%&release=nba-2k23-michael-jordan-edition&platform=steam&medium=digital,
+         ,
+         https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/7a6feb11-8b8c-40e7-a9f2-6fd7615ab028.png,
+         NBA 2K23 MJ EDITION SALE,
+         NBA 2K23 MJ Edition is officially 50% off for the holidays.* The MJ Edition includes 100K VC and digital bonus
+         content for MyTEAM and MyCAREER. Step into the shoes of Michael Jordan in the return of the Jordan Challenge.
+         Relive 15 of MJ's most iconic games, from his college days at UNC to his championship run with the Chicago
+         Bulls. Your holiday shopping won't be fulfilled until you add NBA 2K23 MJ Edition to your wishlist.,
+         BUY NOW,
+         https://nba.2k.com/2k23/buy/?utm_source=sfmc&utm_medium=email&utm_content=Module_2_CTA&utm_campaign=%%jobid%%&release=nba-2k23-michael-jordan-edition&platform=steam&medium=digital,
+         https://nba.2k.com/2k23/buy/?utm_source=sfmc&utm_medium=email&utm_content=Module_3_Image&utm_campaign=%%jobid%%&release=nba-2k23-standard-edition&platform=steam&medium=digital,
+         ,
+         https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/1638e631-96fa-475c-af69-95c93e57f0d8.jpg,
+         NBA 2K23 DECEMBER CONTENT,
+         Install NBA 2K23 before 12/31 to receive a Palm Angels Hoodie/Shorts, one 2HR Double XP coin, 5x MyPLAYER Skill
+         Boosts and multiple MyTEAM packs. Whether you're dominating MyCAREER or building a legacy in MyTEAM, greatness
+         is within reach. Let your holiday spirit takeover during the month of December. **,
+         BUY NOW,
+         https://nba.2k.com/2k23/buy/?utm_source=sfmc&utm_medium=email&utm_content=Module_3_CTA&utm_campaign=%%jobid%%&release=nba-2k23-standard-edition&platform=steam&medium=digital,
+         ,
+         ,
+         ,
+         ,
+         ,
+         ,
+         ,
+         *Discount based on 2K’s SRP. Offer available on PC (Steam), digital only. Sale ends 01/05/2023. Terms apply.
+         **Offer expires December 31, 2022 at 11.59 PDT. NBA 2K account required. NBA 2K account must not have
+         previously installed NBA 2K23. Reward will become available on or before 6 January and must be redeemed by
+         January 31, 2023 at 11.59 PDT. Redeem by logging in and accessing the "what's new in NBA 2K23" message platform
+         on NBA 2K23 main menu. Terms apply. ,
+         © 2005-2022 Take-Two Interactive Software and its subsidiaries. All rights reserved. 2K, the 2K logo, and
+         Take-Two Interactive Software are all trademarks and/or registered trademarks of Take-Two Interactive Software,
+         Inc. The NBA and NBA member team identiﬁcations are the intellectual property of NBA Properties, Inc. and the
+         respective NBA member teams. © 2022 NBA Properties, Inc. All Rights Reserved. The ratings icon is a trademark
+         of the Entertainment Software Association. All other trademarks are property of their respective owners.,
+         https://newsletters.2k.com/nba2k23/footer/nba2k23_esrb_footer.png,
+         You have received this email because you have signed up to receive newsletters from us about our products. You
+         are currently subscribed to our newsletter with the email address,
+         To unsubscribe, please,
+         click here,
+
+      </div>
+
+
+
+      <!--///////// BODY CONTAINER /////////-->
+      <center>
+         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapper"
+            style="max-width: 660px;border-collapse: collapse;mso-table-lspace:             0;mso-table-rspace: 0;margin: 0;"
+            align="center">
+            <tbody>
+               <tr>
+                  <td align="center"
+                     style="border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;margin: 0;">
+                     <!--[if (gte mso 9)|(IE)]>               <table border="0" cellpadding="0" cellspacing="0" width="660" align="center" style="table-layout: fixed;" align="center">                 <tr>                   <td align="center">                     <![endif] -->
+                     <center>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                           style="border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace:                       0;margin: 0;"
+                           align="center">
+                           <tbody>
+                              <tr>
+                                 <td valign="top" align="center" class="full-width-background" bgcolor="#000000">
+                                    <div>
+                                       <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                          class="wrapto100pc" align="center">
+                                          <tbody>
+                                             <tr>
+
+                                                <td class="wrapto600px">
+                                                   <!--[if (gte mso 9)|(IE)]>                                             <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="table-layout: fixed;" align="center">                                               <tr>                                                 <td align="center">                                                   <![endif] -->
+                                                   <!--////////////////////////////////////////////////////// BEGIN PANELS CONTAINER ///////////////////////////////////////////////////////////////// -->
+
+
+
+                                                   <!--  HERO IMAGE MODULE 0////////////////////////////////// -->
+                                                   <table align="center" width="100%" border="0" cellspacing="0"
+                                                      cellpadding="0" bgcolor="#000000"
+                                                      style="background-image: linear-gradient(190deg, rgba(0,0,0,1) 35%, rgba(225,25,11,1) 78%, rgba(188,139,104,1) 87%);">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td width="100%" align="center">
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+
+                                                                     <tr>
+                                                                        <td width="30" class="border"></td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+
+                                                                                 <tr>
+                                                                                    <td width="100%">
+                                                                                       <a style="color: #ffffff; text-decoration: none;display: block;"
+                                                                                          href="https://click.newsletter.2k.com/?qs=4ef7730cd9f8c27381be0224f3911b6d6f89325fb3247d7026608b8490f34940e3d292795a34c265729c305cf893ff17b61cd50d2437b3634abc0c596f9bb183" "; target="
+                                                                                          _blank">
+                                                                                          <table align="center"
+                                                                                             width="100%" border="0"
+                                                                                             cellspacing="0"
+                                                                                             cellpadding="0">
+                                                                                             <tbody>
+                                                                                                <tr>
+                                                                                                   <!-- BACKGROUND IMAGE -->
+                                                                                                   <td background="https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/e5e2c2f5-ef28-4f81-887c-7011ec7c669c.jpg"
+                                                                                                      bgcolor="#000000"
+                                                                                                      valign="top"
+                                                                                                      width="600"
+                                                                                                      height="100%"
+                                                                                                      style="background-size:cover;background-repeat: no-repeat;background-position: center; width: 600px ">
+                                                                                                      <!--[if gte mso 9]>                                                                       <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:950px;">                                                                         <v:fill type="tile" src="https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/e5e2c2f5-ef28-4f81-887c-7011ec7c669c.jpg" color="#000000" />                                                                         <v:textbox inset="0,0,0,0">                                                                       <![endif]-->
+                                                                                                      <div>
+                                                                                                         <!-- TOP LOGO -->
+                                                                                                         <table
+                                                                                                            align="center"
+                                                                                                            width="100%"
+                                                                                                            border="0"
+                                                                                                            cellspacing="0"
+                                                                                                            cellpadding="0">
+                                                                                                            <tbody>
+                                                                                                               <tr>
+                                                                                                                  <td
+                                                                                                                     align="center">
+                                                                                                                     <a href="https://click.newsletter.2k.com/?qs=4ef7730cd9f8c273bcd6637f051f460ac656380901b82af5862cecd7f06713d83c104ea1ad84817c1dca71068c6757f2d99f4337eab75c8e1a10017c7d8e6187" "; target="
+                                                                                                                        _blank">
+                                                                                                                        <img
+                                                                                                                           alt=""
+                                                                                                                           style="border: 0; display: block; width:100%; max-width:100%!important; height: auto;"
+                                                                                                                           border="0"
+                                                                                                                           src="https://newsletters.2k.com/nba2k23/NBA_Logo_2K23_black_2_600x75.png"
+                                                                                                                           width="600"
+                                                                                                                           height="75"
+                                                                                                                           class="wrapto100pc" /></a>
+                                                                                                                  </td>
+                                                                                                               </tr>
+                                                                                                            </tbody>
+                                                                                                         </table>
+                                                                                                         <!-- END TOP LOGO -->
+
+                                                                                                         <!-- PANEL SPACING////////////////////////////////-->
+                                                                                                         <table
+                                                                                                            align="center"
+                                                                                                            width="100%"
+                                                                                                            border="0"
+                                                                                                            cellspacing="0"
+                                                                                                            cellpadding="0">
+                                                                                                            <tbody>
+                                                                                                               <tr>
+                                                                                                                  <td
+                                                                                                                     width="20">
+                                                                                                                     &nbsp;
+                                                                                                                  </td>
+                                                                                                                  <td>
+                                                                                                                     <table
+                                                                                                                        align="center"
+                                                                                                                        width="100%"
+                                                                                                                        border="0"
+                                                                                                                        cellspacing="0"
+                                                                                                                        cellpadding="0">
+                                                                                                                        <tbody>
+                                                                                                                           <tr>
+                                                                                                                              <td width="100%"
+                                                                                                                                 height="80">
+                                                                                                                              </td>
+                                                                                                                           </tr>
+                                                                                                                        </tbody>
+                                                                                                                     </table>
+                                                                                                                  </td>
+                                                                                                                  <td
+                                                                                                                     width="20">
+                                                                                                                     &nbsp;
+                                                                                                                  </td>
+                                                                                                               </tr>
+                                                                                                            </tbody>
+                                                                                                         </table>
+                                                                                                         <!--END PANEL SPACING/////////////////////-->
+                                                                                                         <!-- HEADER 0-->
+                                                                                                         <table
+                                                                                                            width="100%"
+                                                                                                            border="0"
+                                                                                                            cellspacing="0"
+                                                                                                            cellpadding="0"
+                                                                                                            height="580"
+                                                                                                            style="height: 580px; line-height:568px;"
+                                                                                                            class="hero_copy_space">
+                                                                                                            <tbody>
+                                                                                                               <tr>
+                                                                                                                  <td
+                                                                                                                     width="20">
+                                                                                                                  </td>
+                                                                                                                  <td style="vertical-align: bottom;"
+                                                                                                                     valign="bottom">
+                                                                                                                     <table
+                                                                                                                        width="100%"
+                                                                                                                        border="0"
+                                                                                                                        cellspacing="0"
+                                                                                                                        cellpadding="0">
+                                                                                                                        <tbody>
+                                                                                                                           <tr>
+                                                                                                                              <td width="100%"
+                                                                                                                                 style="vertical-align: bottom;">
+                                                                                                                                 <table
+                                                                                                                                    width="100%"
+                                                                                                                                    border="0"
+                                                                                                                                    cellspacing="0"
+                                                                                                                                    cellpadding="0">
+                                                                                                                                    <tbody>
+                                                                                                                                       <tr>
+                                                                                                                                          <td class="hero_copy_space h3"
+                                                                                                                                             align="center"
+                                                                                                                                             valign="bottom"
+                                                                                                                                             height="580"
+                                                                                                                                             style="height: 580px;vertical-align:bottom;font-family:  Arial Black, sans-serif;font-size:60px;line-height:68px;color:#ffffff; font-weight: 800; padding-bottom:10px; mso-line-height-rule: exactly">
+                                                                                                                                             WANT
+                                                                                                                                             MORE
+                                                                                                                                             HOLIDAY
+                                                                                                                                             HOOPS?
+                                                                                                                                          </td>
+                                                                                                                                       </tr>
+
+                                                                                                                                    </tbody>
+                                                                                                                                 </table>
+                                                                                                                              </td>
+                                                                                                                           </tr>
+                                                                                                                        </tbody>
+                                                                                                                     </table>
+                                                                                                                  </td>
+                                                                                                                  <td
+                                                                                                                     width="20">
+                                                                                                                  </td>
+                                                                                                               </tr>
+                                                                                                            </tbody>
+                                                                                                         </table>
+                                                                                                         <!-- END HEADER 0 -->
+                                                                                                         <!--////////// CTA 0 ///////////////// -->
+                                                                                                         <table
+                                                                                                            width="100%"
+                                                                                                            border="0"
+                                                                                                            cellspacing="0"
+                                                                                                            cellpadding="0">
+                                                                                                            <tbody>
+                                                                                                               <tr>
+                                                                                                                  <td width="100%"
+                                                                                                                     height="30">
+                                                                                                                  </td>
+                                                                                                               </tr>
+                                                                                                               <tr>
+                                                                                                                  <td width="100%"
+                                                                                                                     align="center">
+                                                                                                                     <table
+                                                                                                                        border="0"
+                                                                                                                        cellspacing="0"
+                                                                                                                        cellpadding="0"
+                                                                                                                        style="">
+                                                                                                                        <tbody>
+                                                                                                                           <tr>
+                                                                                                                              <td
+                                                                                                                                 width="20">
+                                                                                                                                 &nbsp;
+                                                                                                                              </td>
+                                                                                                                              <td height="80"
+                                                                                                                                 valign="middle"
+                                                                                                                                 align="center"
+                                                                                                                                 width="475"
+                                                                                                                                 style="background-color: #E30101 ;vertical-align: middle;font-family: 'shapiro-95superwide', Arial, sans-serif;font-size:30px;line-height:16px;color:#ffffff;font-weight: 800; "
+                                                                                                                                 class="cta">
+                                                                                                                                 <a style="color: #ffffff; text-decoration: none;display: block;"
+                                                                                                                                    href="https://click.newsletter.2k.com/?qs=4ef7730cd9f8c27381be0224f3911b6d6f89325fb3247d7026608b8490f34940e3d292795a34c265729c305cf893ff17b61cd50d2437b3634abc0c596f9bb183" "; target="
+                                                                                                                                    _blank">BUY
+                                                                                                                                    NOW</a>
+                                                                                                                              </td>
+                                                                                                                              <td
+                                                                                                                                 width="20">
+                                                                                                                                 &nbsp;
+                                                                                                                              </td>
+                                                                                                                           </tr>
+                                                                                                                        </tbody>
+                                                                                                                     </table>
+                                                                                                                  </td>
+                                                                                                               </tr>
+                                                                                                               <tr>
+                                                                                                                  <td width="100%"
+                                                                                                                     height="60">
+                                                                                                                  </td>
+                                                                                                               </tr>
+                                                                                                            </tbody>
+                                                                                                         </table>
+                                                                                                         <!--/////////// END CTA 0 /////////////// -->
+                                                                                                      </div>
+                                                                                                      <!--[if gte mso 9]>                                                                         </v:textbox>                                                                       </v:rect>                                                                       <![endif]-->
+                                                                                                   </td>
+                                                                                                   <!--END BACKGROUND IMAGE -->
+                                                                                                </tr>
+                                                                                             </tbody>
+                                                                                          </table>
+                                                                                       </a>
+
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="30" class="border"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <!-- END HERO IMAGE MODULE 0 ///////////////////////////// -->
+
+                                                   <!-- PANEL (BIG image)560x315_Image Main_Header_text__w_blurb CTA_button /////////////////////////////////// -->
+                                                   <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                      bgcolor="#000000"
+                                                      style="background-image: linear-gradient(190deg, rgba(188,139,104,1) 35%, rgba(225,25,11,1) 78%, rgba(0,0,0,1) 87%);">
+                                                      <tbody>
+
+                                                         <tr>
+                                                            <td width="100%" align="center">
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+
+                                                                     <tr>
+                                                                        <td width="30" class="border"></td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+
+                                                                                 <tr>
+                                                                                    <td width="100%">
+                                                                                       <!-- IMAGE -->
+                                                                                       <table align="center"
+                                                                                          width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <tr>
+                                                                                                <td align="center">
+                                                                                                   <a href="https://click.newsletter.2k.com/?qs=4ef7730cd9f8c27377084197c2bd6b34c357cf0bbdcbbdbaa975d81d7e432e1e8b1b2827e47bc438bfea3b93877a45d9cf8c79811551cdcffad44d50e1ef7591" "; target="
+                                                                                                      _blank"> <img
+                                                                                                         alt=""
+                                                                                                         style="border: 0; display: block; width:100%; max-width:100%!important; height: auto;"
+                                                                                                         border="0"
+                                                                                                         src="https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/df4a3369-8daf-48bf-a1c7-b3ebba6e11a5.jpg"
+                                                                                                         width="600"
+                                                                                                         height="600"
+                                                                                                         class="wrapto100pc" /></a>
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                       <!-- /IMAGE -->
+
+                                                                                       <!-- TERMS -->
+                                                                                       <table align="center"
+                                                                                          width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <tr>
+                                                                                                <td width="20">&nbsp;
+                                                                                                </td>
+                                                                                                <td align="center"
+                                                                                                   style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial,                                                                       sans-serif;font-size:13px;line-height:15px;color: #fff;font-weight: 300; mso-line-height-rule: exactly;"
+                                                                                                   class="footerp">
+                                                                                                </td>
+                                                                                                <td width="20">&nbsp;
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                       <!-- /TERMS -->
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="30" class="border"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="20">&nbsp;</td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="100%" height="30"></td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="20">&nbsp;</td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="40"></td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="100%">
+                                                                                       <table width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <tr>
+                                                                                                <td class="header"
+                                                                                                   align="center"
+                                                                                                   valign="bottom"
+                                                                                                   style="font-family:  Arial Black, sans-serif;font-size:60px;line-height:60px;color:#ffffff; font-weight: 800; padding-bottom:10px; mso-line-height-rule: exactly">
+                                                                                                   NBA 2K23 STANDARD
+                                                                                                   EDITION SALE
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                             <tr>
+                                                                                                <td width="100%"
+                                                                                                   height="20"></td>
+                                                                                             </tr>
+                                                                                             <tr>
+                                                                                                <td align="center"
+                                                                                                   style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial bold, sans-serif;font-size:22px;line-height:30px;color:#fff;font-weight: 500;"
+                                                                                                   class="p">There has
+                                                                                                   never been a better
+                                                                                                   time to try NBA 2K23
+                                                                                                   than right now. Our
+                                                                                                   NBA 2K23 Holiday Sale
+                                                                                                   is here and now you
+                                                                                                   can save 55% on NBA
+                                                                                                   2K23 Standard Edition
+                                                                                                   for PC.* Whether
+                                                                                                   you're dominating
+                                                                                                   MyCAREER, MyTEAM,
+                                                                                                   MyNBA or PLAY NOW,
+                                                                                                   NBA 2K23 will keep
+                                                                                                   you occupied for the
+                                                                                                   holidays. Level-up
+                                                                                                   your game and earn
+                                                                                                   massive rewards on
+                                                                                                   your way to
+                                                                                                   greatness. Don't miss
+                                                                                                   out on the
+                                                                                                   game-winning gift of
+                                                                                                   the holiday season.
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="40"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <!--////////// CTA ///////////////// -->
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="100%" height="20"></td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td width="100%" align="center">
+                                                                           <table border="0" cellspacing="0"
+                                                                              cellpadding="0" style="">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="30">&nbsp;</td>
+                                                                                    <td height="80" valign="middle"
+                                                                                       align="center" width="475"
+                                                                                       style="background-color: #ffffff ;vertical-align: middle;font-family: 'shapiro-95superwide', Arial, sans-serif;font-size:30px;line-height:16px;color:#000000;font-weight: 800; "
+                                                                                       class="cta">
+                                                                                       <a style="color: #000; text-decoration: none;display: block;"
+                                                                                          href="https://click.newsletter.2k.com/?qs=2721773c287e873833d5dbf120fa8541737378ec9fd3cb553edeea3b4bf6ff202c5f8a04c2b29b00636ac059428ae2fba10859e34d7ded72305e774e20585e3f" "; target="
+                                                                                          _blank">BUY NOW</a>
+                                                                                    </td>
+                                                                                    <td width="30">&nbsp;</td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td width="100%" height="40"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <!--/////////// END CTA /////////////// -->
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <!-- END PANEL (BIG image)560x315_Image Main_Header_text__w_blurb CTA_button ///////////////////////////// -->
+
+                                                   <!-- PANEL (BIG image)560x315_Image Main_Header_text__w_blurb CTA_button /////////////////////////////////// -->
+                                                   <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                      bgcolor="#000000"
+                                                      style="background-image:linear-gradient(170deg, rgba(0,0,0,1) 14%, rgba(225,25,11,1) 62%, rgba(188,139,104,1) 87%);">
+                                                      <tbody>
+
+                                                         <tr>
+                                                            <td width="100%" align="center">
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+
+                                                                     <tr>
+                                                                        <td width="30" class="border"></td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+
+                                                                                 <tr>
+                                                                                    <td width="100%">
+                                                                                       <!-- IMAGE -->
+                                                                                       <table align="center"
+                                                                                          width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <tr>
+                                                                                                <td align="center">
+                                                                                                   <a href="https://click.newsletter.2k.com/?qs=2721773c287e8738fbad75cb8169c70a9423cec09f80a61a99a958a65735094e4812638fa4b2c88161f73b905a27b35c6c0f393bbb4692a8a146f98b1e85f4d6" "; target="
+                                                                                                      _blank"> <img
+                                                                                                         alt=""
+                                                                                                         style="border: 0; display: block; width:100%; max-width:100%!important; height: auto;"
+                                                                                                         border="0"
+                                                                                                         src="https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/7a6feb11-8b8c-40e7-a9f2-6fd7615ab028.png"
+                                                                                                         width="600"
+                                                                                                         height="600"
+                                                                                                         class="wrapto100pc" /></a>
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                       <!-- /IMAGE -->
+
+                                                                                       <!-- TERMS -->
+                                                                                       <table align="center"
+                                                                                          width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <tr>
+                                                                                                <td width="20">&nbsp;
+                                                                                                </td>
+                                                                                                <td align="center"
+                                                                                                   style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial,                                                                     sans-serif;font-size:13px;line-height:15px;color: #ffffff;font-weight: 300; mso-line-height-rule: exactly;"
+                                                                                                   class="footerp">
+                                                                                                </td>
+                                                                                                <td width="20">&nbsp;
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                       <!-- /TERMS -->
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="30" class="border"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="20">&nbsp;</td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="100%" height="30"></td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="20">&nbsp;</td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="40"></td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="100%">
+                                                                                       <table width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <!-- HEADER -->
+                                                                                             <tr>
+                                                                                                <td class="header"
+                                                                                                   align="center"
+                                                                                                   valign="bottom"
+                                                                                                   style="font-family:  Arial Black, sans-serif;font-size:60px;line-height:60px;color:#ffffff; font-weight: 800; padding-bottom:10px; mso-line-height-rule: exactly">
+                                                                                                   NBA 2K23 MJ EDITION
+                                                                                                   SALE
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                             <!-- /HEADER -->
+                                                                                             <tr>
+                                                                                                <td width="100%"
+                                                                                                   height="20"></td>
+                                                                                             </tr>
+                                                                                             <!-- BODY -->
+                                                                                             <tr>
+                                                                                                <td align="center"
+                                                                                                   style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial bold, sans-serif;font-size:22px;line-height:30px;color:#ffffff;font-weight: 500;"
+                                                                                                   class="p">NBA 2K23 MJ
+                                                                                                   Edition is officially
+                                                                                                   50% off for the
+                                                                                                   holidays.* The MJ
+                                                                                                   Edition includes 100K
+                                                                                                   VC and digital bonus
+                                                                                                   content for MyTEAM
+                                                                                                   and MyCAREER. Step
+                                                                                                   into the shoes of
+                                                                                                   Michael Jordan in the
+                                                                                                   return of the Jordan
+                                                                                                   Challenge. Relive 15
+                                                                                                   of MJ's most iconic
+                                                                                                   games, from his
+                                                                                                   college days at UNC
+                                                                                                   to his championship
+                                                                                                   run with the Chicago
+                                                                                                   Bulls. Your holiday
+                                                                                                   shopping won't be
+                                                                                                   fulfilled until you
+                                                                                                   add NBA 2K23 MJ
+                                                                                                   Edition to your
+                                                                                                   wishlist.
+                                                                                                </td>
+                                                                                                <!-- /BODY-->
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="40"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <!--////////// CTA ///////////////// -->
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="100%" height="20"></td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td width="100%" align="center">
+                                                                           <table border="0" cellspacing="0"
+                                                                              cellpadding="0" style="">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="30">&nbsp;</td>
+                                                                                    <td height="80" valign="middle"
+                                                                                       align="center" width="475"
+                                                                                       style="background-color: #fff ;vertical-align: middle;font-family: 'shapiro-95superwide', Arial, sans-serif;font-size:30px;line-height:16px;color:#000;font-weight: 800; "
+                                                                                       class="cta">
+                                                                                       <a style="color: #000; text-decoration: none;display: block;"
+                                                                                          href="https://click.newsletter.2k.com/?qs=2721773c287e873830e3cf31a9854c67d9d2f365dd588560dbe133409edba0bd47c9251e6bbd45aaad8202c1af74aa95a9a05135b3ecc8efb026db893a9b2966" "; target="
+                                                                                          _blank">BUY NOW</a>
+                                                                                    </td>
+                                                                                    <td width="30">&nbsp;</td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td width="100%" height="40"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <!--/////////// END CTA /////////////// -->
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <!-- END PANEL (BIG image)560x315_Image Main_Header_text__w_blurb CTA_button ///////////////////////////// -->
+                                                   <!-- PANEL (BIG image)560x315_Image Main_Header_text__w_blurb CTA_button /////////////////////////////////// -->
+                                                   <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                      bgcolor="#000000"
+                                                      style="background-image: linear-gradient(190deg, rgba(188,139,104,1) 35%, rgba(225,25,11,1) 78%, rgba(0,0,0,1) 87%);">
+                                                      <tbody>
+
+                                                         <tr>
+                                                            <td width="100%" align="center">
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+
+                                                                     <tr>
+                                                                        <td width="30" class="border"></td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+
+                                                                                 <tr>
+                                                                                    <td width="100%">
+                                                                                       <!-- IMAGE -->
+                                                                                       <table align="center"
+                                                                                          width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <tr>
+                                                                                                <td align="center">
+                                                                                                   <a href="https://click.newsletter.2k.com/?qs=2721773c287e8738c8e74e3383bbb30a91e3a6933c2d906291765824d945448f5ad109878728bcd730ecbdefd23a0a7f8b7e27537de4e7d3e32556ed50fbb5f3" "; target="
+                                                                                                      _blank"> <img
+                                                                                                         alt=""
+                                                                                                         style="border: 0; display: block; width:100%; max-width:100%!important; height: auto;"
+                                                                                                         border="0"
+                                                                                                         src="https://image.newsletter.2k.com/lib/fe8912717c67027570/m/2/1638e631-96fa-475c-af69-95c93e57f0d8.jpg"
+                                                                                                         width="600"
+                                                                                                         height="600"
+                                                                                                         class="wrapto100pc" /></a>
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                       <!-- /IMAGE -->
+
+                                                                                       <!-- TERMS -->
+                                                                                       <table align="center"
+                                                                                          width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <tr>
+                                                                                                <td width="20">&nbsp;
+                                                                                                </td>
+                                                                                                <td align="center"
+                                                                                                   style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial,                                                                       sans-serif;font-size:13px;line-height:15px;color: #fff;font-weight: 300; mso-line-height-rule: exactly;"
+                                                                                                   class="footerp">
+                                                                                                </td>
+                                                                                                <td width="20">&nbsp;
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                       <!-- /TERMS -->
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="30" class="border"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="20">&nbsp;</td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="100%" height="30"></td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="20">&nbsp;</td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="40"></td>
+                                                                        <td>
+                                                                           <table width="100%" border="0"
+                                                                              cellspacing="0" cellpadding="0">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="100%">
+                                                                                       <table width="100%" border="0"
+                                                                                          cellspacing="0"
+                                                                                          cellpadding="0">
+                                                                                          <tbody>
+                                                                                             <!-- HEADER -->
+                                                                                             <tr>
+                                                                                                <td class="header"
+                                                                                                   align="center"
+                                                                                                   valign="bottom"
+                                                                                                   style="font-family:  Arial Black, sans-serif;font-size:60px;line-height:60px;color:#fff; font-weight: 800; padding-bottom:10px; mso-line-height-rule: exactly">
+                                                                                                   NBA 2K23 DECEMBER
+                                                                                                   CONTENT
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                             <!-- /HEADER -->
+                                                                                             <tr>
+                                                                                                <td width="100%"
+                                                                                                   height="20"></td>
+                                                                                             </tr>
+                                                                                             <!-- BODY -->
+                                                                                             <tr>
+                                                                                                <td align="center"
+                                                                                                   style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial bold, sans-serif;font-size:22px;line-height:30px;color:#fff;font-weight: 500;"
+                                                                                                   class="p">Install NBA
+                                                                                                   2K23 before 12/31 to
+                                                                                                   receive a Palm Angels
+                                                                                                   Hoodie/Shorts, one
+                                                                                                   2HR Double XP coin,
+                                                                                                   5x MyPLAYER Skill
+                                                                                                   Boosts and multiple
+                                                                                                   MyTEAM packs. Whether
+                                                                                                   you're dominating
+                                                                                                   MyCAREER or building
+                                                                                                   a legacy in MyTEAM,
+                                                                                                   greatness is within
+                                                                                                   reach. Let your
+                                                                                                   holiday spirit
+                                                                                                   takeover during the
+                                                                                                   month of December. **
+                                                                                                </td>
+                                                                                                <!-- /BODY-->
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                        <td width="40"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <!--////////// CTA ///////////////// -->
+                                                               <table width="100%" border="0" cellspacing="0"
+                                                                  cellpadding="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td width="100%" height="20"></td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td width="100%" align="center">
+                                                                           <table border="0" cellspacing="0"
+                                                                              cellpadding="0" style="">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td width="30">&nbsp;</td>
+                                                                                    <td height="80" valign="middle"
+                                                                                       align="center" width="475"
+                                                                                       style="background-color: #fff ;vertical-align: middle;font-family: 'shapiro-95superwide', Arial, sans-serif;font-size:30px;line-height:16px;color:#000;font-weight: 800; "
+                                                                                       class="cta">
+                                                                                       <a style="color: #000; text-decoration: none;display: block;"
+                                                                                          href="https://click.newsletter.2k.com/?qs=2721773c287e8738b53679b83d9a9e6c5d509d61239e639dd93e6f557cffca5af3eaceb8e7b31e7bce341885e36dc72563ce86256332ea6d0642fc90011a9293" "; target="
+                                                                                          _blank">BUY NOW</a>
+                                                                                    </td>
+                                                                                    <td width="30">&nbsp;</td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td width="100%" height="40"></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                               <!--/////////// END CTA /////////////// -->
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <!-- END PANEL (BIG image)560x315_Image Main_Header_text__w_blurb CTA_button ///////////////////////////// -->
+
+
+                                                   <!--//////2K21 LOGO CONTAINER//////-->
+                                                   <table align="center" width="100%" border="0" cellspacing="0"
+                                                      cellpadding="0" bgcolor="#000000"
+                                                      style="background-image: linear-gradient(#000,#000)">
+                                                      <tbody>
+
+                                                         <tr>
+                                                            <td width="100%" align="center">
+                                                               <table border="0" cellspacing="0" cellpadding="0">
+                                                                  <tbody>
+                                                                     <!-- 2K21 LOGO -->
+                                                                     <tr>
+                                                                        <td width="60"></td>
+                                                                        <td class="cta">
+                                                                           <a "; target=" _blank"
+                                                                              href="https://click.newsletter.2k.com/?qs=4ef7730cd9f8c273bcd6637f051f460ac656380901b82af5862cecd7f06713d83c104ea1ad84817c1dca71068c6757f2d99f4337eab75c8e1a10017c7d8e6187"
+                                                                              style="display: block">
+                                                                              <img alt="2K21 LOGO"
+                                                                                 style="display: block; width: 100%; max-width:100%!important; height: auto;"
+                                                                                 src="https://newsletters.2k.com/nba2k23/NBA_Logo_576x59.png" />
+                                                                           </a>
+                                                                        </td>
+                                                                        <td width="60"></td>
+                                                                     </tr>
+                                                                     <!-- /2K21 LOGO-->
+                                                                  </tbody>
+                                                               </table>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <!--///////2K21 LOGOCONTAINER////// -->
+
+                                                   <!--////////////// END PANELS CONTAINER ///////////////////////////////////////////////////////////////// -->
+                                                   <!--[if (gte mso 9)|(IE)]>                                                 </td>                                               </tr>                                             </table>                                             <![endif] -->
+                                                </td>
+
+                                             </tr>
+                                          </tbody>
+                                       </table>
+
+                                    </div>
+                                    <!--[if gte mso 9]>                                       </v:textbox>                                     </v:rect>                                     <![endif]-->
+                                 </td>
+                                 <td style="font-size:0px">&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </center>
+                     <!--[if (gte mso 9)|(IE)]>                         </td>                       </tr>                     </table>                     <![endif] -->
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </center>
+      <!--///////// END BODY CONTAINER ////////-->
+
+      <!-- ///////// FOOTER ///////// -->
+      <center>
+         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapper"
+            style="max-width: 660px;border-collapse: collapse;mso-table-lspace:                 0;mso-table-rspace: 0;margin: 0;"
+            align="center" bgcolor="#000000"
+            style="background-image:linear-gradient(170deg, rgba(0,0,0,1) 14%, rgba(225,25,11,1) 62%, rgba(188,139,104,1) 87%);">
+            <tbody>
+               <tr>
+                  <td align="center"
+                     style="border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;margin: 0; background-image:linear-gradient(170deg, rgba(0,0,0,1) 14%, rgba(225,25,11,1) 62%, rgba(188,139,104,1) 87%);"
+                     bgcolor="#000000">
+                     <!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0" width="660" align="center" style="table-layout: fixed;" align="center"><tr><td align="center"><![endif] -->
+                     <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="wrapto100pc"
+                        align="center">
+                        <tbody>
+                           <tr>
+                              <td style="font-size:0px">&nbsp;</td>
+                              <td class="wrapto600px">
+                                 <!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="table-layout: fixed;" align="center"><tr><td align="center"><![endif] -->
+                                 <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="100%" height="15" style="border-bottom: 1px solid #313131;"></td>
+                                       </tr>
+                                       <tr>
+                                          <td width="100%" height="15"></td>
+                                       </tr>
+                                       <tr>
+                                          <td width="100%" align="center">
+                                             <table width="300" border="0" cellspacing="0" cellpadding="0"
+                                                class="footer">
+                                                <tbody>
+                                                   <tr>
+                                                      <td width="15">&nbsp;</td>
+                                                      <td><a href="https://click.newsletter.2k.com/?qs=2721773c287e8738c0969d24c93ea5ae6e6576be331d58f868fa25b1224aee79b68352a3b92cee0416ef078088f8adee727db8fca287ce75ecf8d01250213a1e" "; target="
+                                                            _blank"><img style="display: block" border="0"
+                                                               src="https://newsletters.2k.com/common/fb-icon-w.png"
+                                                               width="40" height="40" alt=""></a></td>
+                                                      <td width="15">&nbsp;</td>
+                                                      <td><a href="https://click.newsletter.2k.com/?qs=2721773c287e8738dcd8117f779717bf91c6483f0f472420d97f8b98bbcc0efa128de8718a500fb7e9ac38ad5474d70b8c2b399dd1bf228a15edb886ca8d059d" "; target="
+                                                            _blank"><img style="display: block" border="0"
+                                                               src="https://newsletters.2k.com/common/tw-icon-w.png"
+                                                               width="40" height="40" alt=""></a></td>
+                                                      <td width="15">&nbsp;</td>
+                                                      <td><a href="https://click.newsletter.2k.com/?qs=2721773c287e873802ccb9649ce606ecca16e27fdddf09a3d8a0ff931e9e3c106d9b76ec16ee510a2f6611e11ad3eac412ea83b5504341096220d373dba4e1d7" "; target="
+                                                            _blank"><img style="display: block" border="0"
+                                                               src="https://newsletters.2k.com/common/ig-icon-w.png"
+                                                               width="40" height="40" alt=""></a></td>
+                                                      <td width="15">&nbsp;</td>
+                                                      <td><a href="https://click.newsletter.2k.com/?qs=2721773c287e8738938048017bfeb49fd6df58532f32b29ce1136da00ae4899611734a21678ccee2e9e1da4680ab01aee6034d2a0664263b701a9cd73aea9485" "; target="
+                                                            _blank"><img style="display: block" border="0"
+                                                               src="https://newsletters.2k.com/common/yt-icon-w.png"
+                                                               width="40" height="40" alt=""></a></td>
+                                                      <td width="15">&nbsp;</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td width="100%" height="15" style="border-bottom: 1px solid #313131;"></td>
+                                       </tr>
+                                       <tr>
+                                          <td width="100%" height="15"></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td width="100%" height="30">&nbsp;</td>
+                                       </tr>
+                                       <!--GAME ESRB RATINGS-->
+                                       <tr>
+                                          <td width="100%" align="center"><img alt="GAME RATINGS"
+                                                style="max-width:600px!important; width:100%; height: auto; border: 0; display: block;"
+                                                border="0"
+                                                src="https://newsletters.2k.com/nba2k23/footer/nba2k23_esrb_footer.png" />
+                                          </td>
+                                       </tr>
+                                       <!--/GAME ESRB RATINGS-->
+                                       <tr>
+                                          <td width="100%" height="30" style="border-bottom: 1px solid #313131;">&nbsp;
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td width="100%" height="20">&nbsp;</td>
+                                       </tr>
+                                       <tr>
+                                          <td width="100%">
+
+
+                                             <!--NBA Legal Disclaimer -->
+                                             <table align="center" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td width="20">&nbsp;</td>
+                                                      <td align="left"
+                                                         style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial,                                             sans-serif;font-size:13px;line-height:18px;color:#fff;font-weight: 300;max-width:100%!important;"
+                                                         class="footerp">*Discount based on 2K’s SRP. Offer available on
+                                                         PC (Steam), digital only. Sale ends 01/05/2023. Terms apply.
+                                                         **Offer expires December 31, 2022 at 11.59 PDT. NBA 2K account
+                                                         required. NBA 2K account must not have previously installed NBA
+                                                         2K23. Reward will become available on or before 6 January and
+                                                         must be redeemed by January 31, 2023 at 11.59 PDT. Redeem by
+                                                         logging in and accessing the "what's new in NBA 2K23" message
+                                                         platform on NBA 2K23 main menu. Terms apply. </td>
+                                                      <td width="20">&nbsp;</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table align="center" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td width="100%" height="25">&nbsp;</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <!-- END NBA Legal Disclaimer-->
+                                             <!--NBA Legal Disclaimer -->
+                                             <table align="center" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td width="20">&nbsp;</td>
+                                                      <td align="left"
+                                                         style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial,                                               sans-serif;font-size:13px;line-height:18px;color:#fff;font-weight: 300;max-width:100%!important;"
+                                                         class="footerp">© 2005-2022 Take-Two Interactive Software and
+                                                         its subsidiaries. All rights reserved. 2K, the 2K logo, and
+                                                         Take-Two Interactive Software are all trademarks and/or
+                                                         registered trademarks of Take-Two Interactive Software, Inc.
+                                                         The NBA and NBA member team identiﬁcations are the intellectual
+                                                         property of NBA Properties, Inc. and the respective NBA member
+                                                         teams. © 2022 NBA Properties, Inc. All Rights Reserved. The
+                                                         ratings icon is a trademark of the Entertainment Software
+                                                         Association. All other trademarks are property of their
+                                                         respective owners.</td>
+                                                      <td width="20">&nbsp;</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table align="center" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td width="100%" height="25">&nbsp;</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <!-- END NBA Legal Disclaimer-->
+
+                                             <table align="center" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td width="20">&nbsp;</td>
+
+                                                      <!-- 2K Unsubscribe-->
+                                                      <!-- <td align="left" style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;color:#9d9d9d;font-weight: 300;"                                           class="footerp">Stay tuned to keep up with our products and                                           upcoming events.<br> Not Interested? <a style="color: #fff; text-decoration: underline;"                                             href="">Unsubscribe</a> to stop recieving these                                           emails.</td> -->
+                                                      <!--/ 2K Unsubscribe-->
+
+                                                      <!-- NBA Unsubscribe-->
+                                                      <td align="left"
+                                                         style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial,                                               sans-serif;font-size:13px;line-height:18px;color:#fff;font-weight: 300;"
+                                                         class="footerp">You have received this email because you have
+                                                         signed up to receive newsletters from us about our products.
+                                                         You are currently subscribed to our newsletter with the email
+                                                         address umpacan0902@gmail.com. To unsubscribe, please
+                                                         <a style="color: #ffffff; text-decoration: underline;"
+                                                            href="https://click.newsletter.2k.com/unsub_center.aspx?qs=266b1a502b660550923d93dd6f142afadc17ad2771b48b18328cb6997f74a320e841b0e1d3bb815743016bd3d879579eb3588b10240e119d8b8a1631623daa83b107434ca4ef2308a814e5f393087e4f">click
+                                                            here
+                                                         </a>.
+                                                      </td>
+                                                      <!--/ NBA Unsubscribe-->
+
+                                                      <td width="20">&nbsp;</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table align="center" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td width="100%" height="25">&nbsp;</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table align="center" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td width="20">&nbsp;</td>
+                                                      <td align="left"
+                                                         style="vertical-align: middle;font-family: 'Lato', Helvetica, Arial,                                               sans-serif;font-size:13px;line-height:18px;color:#fff;font-weight: 300;"
+                                                         class="footerp">This email is being sent to you from 2K <br>9
+                                                         Hamilton Landing, Novato, CA 94949 (415) 479-3634
+                                                         <a style="color: #fff; text-decoration: underline;"
+                                                            href="https://click.newsletter.2k.com/?qs=fe2aadbffacd9ff6ddbbb3c611b19ae59123110f7b9e8845a55720a80e35af6d36483acb5b8ff26d924e7fff2a49a9c9293d20ad20e8be85">www.2K.com</a>.
+                                                      </td>
+                                                      <td width="20">&nbsp;</td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td width="100%" height="30">&nbsp;</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+
+                                 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif] -->
+                              </td>
+                              <td style="font-size:0px">&nbsp;</td>
+                           </tr>
+                        </tbody>
+                     </table>
+
+                     <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif] -->
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </center>
+      <!-- ///////// FOOTER /////////-->
+
+      <!--[if (gte mso 9)|(IE)]></body>       <![endif]-->
+   </div>
+
+   </custom>
+</body>
+
+</html>
+
+--CwFSNt9U93Ab=_?:--
